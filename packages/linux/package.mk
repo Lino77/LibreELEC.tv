@@ -47,8 +47,8 @@ case "$LINUX" in
     PKG_DEPENDS_TARGET="$PKG_DEPENDS_TARGET aml-dtbtools:host"
     ;;
   amlogic-4.16)
-    PKG_VERSION="4a3928c" #4.16-rc3
-    PKG_SHA256="2b4365ab610334c77c174dc2e945bc8145333453ba68ee3d3005e403318f06bf"
+    PKG_VERSION="661e50b" #4.16-rc4
+    PKG_SHA256="ebdd7f9ba1dfa2c246fccc503e2c63eee7760d8243d49f1cef556962dfaff476"
     PKG_URL="https://github.com/torvalds/linux/archive/$PKG_VERSION.tar.gz"
     PKG_SOURCE_DIR="$PKG_NAME-$PKG_VERSION*"
     PKG_PATCH_DIRS="default"
