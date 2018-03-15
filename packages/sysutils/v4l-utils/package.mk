@@ -45,6 +45,7 @@ make_target() {
   make -C utils/ir-ctl CFLAGS="$TARGET_CFLAGS"
   if [ "$CEC_FRAMEWORK_SUPPORT" = "yes" ]; then
     make -C utils/cec-ctl CFLAGS="$TARGET_CFLAGS"
+    make -C utils/cec-follower CFLAGS="$TARGET_CFLAGS"
   fi
   make -C lib CFLAGS="$TARGET_CFLAGS"
   make -C utils/dvb CFLAGS="$TARGET_CFLAGS"
@@ -56,6 +57,7 @@ makeinstall_target() {
   make install DESTDIR=$INSTALL PREFIX=/usr -C utils/ir-ctl
   if [ "$CEC_FRAMEWORK_SUPPORT" = "yes" ]; then
     make install DESTDIR=$INSTALL PREFIX=/usr -C utils/cec-ctl
+    make install DESTDIR=$INSTALL PREFIX=/usr -C utils/cec-follower
   fi
   make install DESTDIR=$INSTALL PREFIX=/usr -C utils/dvb
   make install DESTDIR=$INSTALL PREFIX=/usr -C utils/v4l2-ctl
