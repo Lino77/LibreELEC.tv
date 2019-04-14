@@ -30,6 +30,12 @@ case "$LINUX" in
     PKG_URL="https://github.com/rockchip-linux/kernel/archive/$PKG_VERSION.tar.gz"
     PKG_SOURCE_NAME="linux-$LINUX-$PKG_VERSION.tar.gz"
     ;;
+  rockchip-5.x)
+    PKG_VERSION="5.0.11"
+    PKG_SHA256="18db623665cad3802e79eef22830fc2aac8a76c41cd3c3ae6cc4bbe245957fa0"
+    PKG_URL="https://www.kernel.org/pub/linux/kernel/v5.x/$PKG_NAME-$PKG_VERSION.tar.xz"
+    PKG_SOURCE_NAME="linux-$LINUX-$PKG_VERSION.tar.gz"
+    ;;
   raspberrypi)
     PKG_VERSION="75b821b12af48026ca25614cd8968da26f861964" # 5.0.7
     PKG_SHA256="8448e36fdd7ed4c4433a5a47d7136753dc5b11b7a1c9830889fb82517f22a547"
